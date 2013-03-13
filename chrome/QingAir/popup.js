@@ -29,12 +29,12 @@ function refresh() {
             }
         }
     }
-    var currentCity = "上海";
+    var currentCity = "";
     var currentCityNode = document.getElementById("currentCity");
     if (null != currentCityNode) {
         currentCity = currentCityNode.innerText;
     }
-    var url = "http://jindu.sinaapp.com/getCityAqiHtml.php?cityName=" + currentCity;
+    var url = "http://jindu.sinaapp.com/getCityAqiHtml02.php?cityName=" + currentCity;
 	xmlhttp1.open("GET", url, true);
 	xmlhttp1.send();
 
